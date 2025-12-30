@@ -5,3 +5,5 @@ export type menuItem ={
     quantity: number,
     category: string
 } 
+
+export type OrderItem = menuItem

@@ -1,9 +1,12 @@
 import MenuItem from "./components/MenuItem"
 import {menuItems} from "./data/db"
+import useOrder from "./hooks/useOrder"
+
 
 
 function App() {
   
+  const { addItem } = useOrder()
 
   return (
     <>
@@ -21,7 +24,9 @@ function App() {
        <h2 >Menu</h2>
        <div>
        {menuItems.map(item =>(
-        <MenuItem item={item}
+        <MenuItem
+         item={item}
+         addItem={addItem}
         key={item.id}
 
         
