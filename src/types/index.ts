@@ -7,3 +7,4 @@ export type menuItem ={
 } 
 
 export type OrderItem = menuItem
+export type currencyAmount = menuItem
